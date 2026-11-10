@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101828"><meta name="description" content="NEXTORA — where professional conversations meet what matters now.">
+<title>NEXTORA — Work moves forward here</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#"><span class="brandmark">N</span><span>NEXTORA</span></a>
+<div class="search"><span>⌕</span><input id="search" placeholder="Search people, topics, companies"></div>
+<nav><a class="active" href="#feed">Feed</a><a href="#discover">Discover</a><a href="#news">News</a></nav>
+<div class="top-actions"><button class="ghost" id="signin">Sign in</button><button class="primary small" id="joinTop">Join NEXTORA</button></div>
+</header>
+<main class="layout">
+<aside class="leftcol">
+  <section class="profile-card"><div class="cover"></div><div class="avatar big">N</div><h3>Welcome to NEXTORA</h3><p class="muted">Your professional world, in motion.</p><button class="outline full" id="joinSide">Create your profile</button><div class="profile-stats"><span>Community<strong>Growing</strong></span><span>Topics<strong>Explore</strong></span></div></section>
+  <section class="side-card"><h4>Explore topics</h4><a href="#feed">Technology <span>↗</span></a><a href="#feed">Business <span>↗</span></a><a href="#feed">Science & AI <span>↗</span></a><a href="#feed">Careers <span>↗</span></a><a href="#feed">World affairs <span>↗</span></a></section>
+  <p class="fine">About · Community guidelines · Privacy<br>© 2026 NEXTORA</p>
+</aside>
+<section class="center" id="feed">
+  <div class="welcome"><div><div class="eyebrow">THE PROFESSIONAL NETWORK FOR WHAT'S NEXT</div><h1>Ideas move faster<br><em>when we move together.</em></h1><p>Connect with people, follow the stories shaping your industry, and add your perspective.</p></div><div class="orb"><span>n</span></div></div>
+  <div class="tabs"><button class="tab selected" data-filter="all">For you</button><button class="tab" data-filter="Following">Following</button><button class="tab" data-filter="Technology">Technology</button><button class="tab" data-filter="Business">Business</button><button class="tab" data-filter="Science">Science</button></div>
+  <section class="composer"><div class="avatar">Y</div><button class="composer-input" id="openComposer">Share an idea, update or story with your network…</button><div class="composer-actions"><button id="writePost">✎ &nbsp;Write a post</button><button id="shareLink">↗ &nbsp;Share a link</button><span class="muted">Public community</span></div></section>
+  <div id="composerPanel" class="composer-panel hidden"><textarea id="postText" placeholder="What would you like the community to know?"></textarea><div class="compose-bottom"><select id="postTopic"><option>Technology</option><option>Business</option><option>Science</option><option>Careers</option><option>World affairs</option></select><button class="primary" id="publish">Publish post</button></div></div>
+  <div class="section-heading"><h2>Latest conversations</h2><span class="live-dot">Community feed</span></div>
+  <div id="posts"></div>
+</section>
+<aside class="rightcol">
+  <section class="side-card news-card" id="news"><div class="section-heading"><h3>What's happening</h3><span class="live-dot">Briefing</span></div>
+  <article><span class="tag">TECHNOLOGY</span><h4>AI is changing how teams build and collaborate</h4><p class="muted">A conversation worth following across every industry.</p></article>
+  <article><span class="tag">BUSINESS</span><h4>The next generation of professional communities</h4><p class="muted">Why networks are becoming more participatory.</p></article>
+  <article><span class="tag">SCIENCE</span><h4>Research moves forward through open exchange</h4><p class="muted">Ideas, evidence and informed debate.</p></article>
+  <p class="fine">Editorial-style sample headlines. Live news sources are not connected yet.</p></section>
+  <section class="side-card" id="discover"><h3>People to discover</h3><div class="person"><div class="avatar">AM</div><div><b>Alex Morgan</b><small>Product & technology</small></div><button class="follow">+</button></div><div class="person"><div class="avatar purple">SK</div><div><b>Samira Khan</b><small>Research & innovation</small></div><button class="follow">+</button></div><div class="person"><div class="avatar orange">JL</div><div><b>Jordan Lee</b><small>Entrepreneurship</small></div><button class="follow">+</button></div></section>
+  <div class="callout"><span class="eyebrow">A NEW KIND OF NETWORK</span><h3>Professional doesn't have to mean formal.</h3><p>Share what you're learning. Ask better questions. Find your people.</p><button class="primary full" id="joinBottom">Be part of it</button></div>
+</aside>
+</main>
+<div class="modal hidden" id="modal"><div class="modal-box"><button class="close" id="closeModal">×</button><div class="brand"><span class="brandmark">N</span><span>NEXTORA</span></div><h2 id="modalTitle">Join the conversation</h2><p class="muted">Create your account when member registration is connected.</p><input placeholder="Your name" disabled><input placeholder="Email address" disabled><button class="primary full" disabled>Registration coming soon</button><p class="fine">This preview is not connected to user accounts or a shared database.</p></div></div>
+<script src="/app.js"></script>
+</body></html>
